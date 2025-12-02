@@ -8,7 +8,7 @@
 #include "../utils/constants/FieldCnst.h"
 #include "../utils/constants/CollectionCnst.h"
 #include "../utils/constants/UsersSettingsCnst.h"
-// мы сломали :)
+// где бы тут что сломать :)
 using bsoncxx::builder::basic::kvp;
 
 std::map<std::string, Session> SessionAgregator::currentConnections;
