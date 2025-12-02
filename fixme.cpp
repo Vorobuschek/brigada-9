@@ -12,7 +12,7 @@
 using bsoncxx::builder::basic::kvp;
 // больше ломать не нужно
 std::map<std::string, Session> SessionAgregator::currentConnections;
-
+// осталось только сдать лабу
 bool SessionAgregator::sessionDead(std::string uuidForSession) {
     auto availableSession = currentConnections.find(uuidForSession);
     if (availableSession != currentConnections.end()) {
@@ -127,4 +127,5 @@ bsoncxx::builder::basic::document SessionAgregator::getFilter(std::string userLo
     return filter;
 
 }
+
 
