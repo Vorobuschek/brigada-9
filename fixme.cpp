@@ -8,7 +8,7 @@
 #include "../utils/constants/FieldCnst.h"
 #include "../utils/constants/CollectionCnst.h"
 #include "../utils/constants/UsersSettingsCnst.h"
-
+// мы сломали :)
 using bsoncxx::builder::basic::kvp;
 
 std::map<std::string, Session> SessionAgregator::currentConnections;
@@ -125,4 +125,5 @@ bsoncxx::builder::basic::document SessionAgregator::getFilter(std::string userLo
     auto filter = bsoncxx::builder::basic::document{};
     filter.append(kvp(FieldCnst::LOGIN, userLogin.c_str()));
     return filter;
+
 }
