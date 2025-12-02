@@ -10,7 +10,7 @@
 #include "../utils/constants/UsersSettingsCnst.h"
 // мы сломали :)
 using bsoncxx::builder::basic::kvp;
-
+// больше ломать не нужно
 std::map<std::string, Session> SessionAgregator::currentConnections;
 
 bool SessionAgregator::sessionDead(std::string uuidForSession) {
@@ -127,3 +127,4 @@ bsoncxx::builder::basic::document SessionAgregator::getFilter(std::string userLo
     return filter;
 
 }
+
